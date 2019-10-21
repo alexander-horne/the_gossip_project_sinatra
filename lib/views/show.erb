@@ -5,11 +5,11 @@
   <body>
     <h1>Mon super site de gossip, depuis le dossier views !</h1>
     <a href="/gossips/new/">gossips</a>
-    <% gossips.each do |gossip| %>
-        <p>
-          <%= gossip.author %><br/>
-          <%= gossip.content %>
-        </p>
-      <% end %>
+    <p>PAGE POTIN
+Voici la page du potin n°<%= params["id"]%>
+Son auteur : <%= gossip.author%>
+Le contenu du potin : <%= gossip.content%>
+
+Lien pour revenir à la page des potins</p>
   </body>
 </html>
